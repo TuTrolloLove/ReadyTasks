@@ -1,0 +1,312 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <!--  AddNoteView  -->
+    <system:String x:Key="EN_AddNoteTitle">Add NotAe</system:String>
+    <system:String x:Key="EN_AddNoteLabelTitleNote">TITLE</system:String>
+    <system:String x:Key="EN_AddNoteLabelContentNote">CONTENT</system:String>
+    <system:String x:Key="EN_AddNoteLabelPriority">PRIORITY</system:String>
+    <system:String x:Key="EN_AddNoteComboBoxItemLow">Low</system:String>
+    <system:String x:Key="EN_AddNoteComboBoxItemMedium">Medium</system:String>
+    <system:String x:Key="EN_AddNoteComboBoxItemHigh">High</system:String>
+    <system:String x:Key="EN_AddNoteButtonSave">S A V E</system:String>
+
+
+    <!--  EditNoteView  -->
+    <system:String x:Key="EN_EditNoteTitle">Edit Note</system:String>
+    <system:String x:Key="EN_EditNoteTextBlockTitleNote">TITLE</system:String>
+    <system:String x:Key="EN_EditNoteTextBlockContentNote">CONTENT</system:String>
+    <system:String x:Key="EN_EditNoteTextBlockPriorityNote">PRIORITY</system:String>
+    <system:String x:Key="EN_EditNoteComboBoxItemLow">Low</system:String>
+    <system:String x:Key="EN_EditNoteComboBoxItemMedium">Medium</system:String>
+    <system:String x:Key="EN_EditNoteComboBoxItemHigh">High</system:String>
+    <system:String x:Key="EN_EditNoteButtonSave">S A V E</system:String>
+
+
+    <!--  EditNoteView -> CS  -->
+    <system:String x:Key="EN_EditNoteViewCSErrorMessage">
+        An error has occurred, please try again
+    </system:String>
+
+
+    <!--  AdminView  -->
+    <system:String x:Key="EN_AdminViewTab1Header">Users</system:String>
+    <system:String x:Key="EN_AdminViewTab2Header">Notes</system:String>
+    <system:String x:Key="EN_AdminViewTab3Header">Dashboard</system:String>
+    <system:String x:Key="EN_AdminViewTotalUsers">Users</system:String>
+    <system:String x:Key="EN_AdminViewTotalNotes">Notes</system:String>
+    <system:String x:Key="EN_AdminViewTotalCompletedNotes">Completed notes</system:String>
+    <system:String x:Key="EN_AdminViewTotalNotCompletedNotes">Not completed notes</system:String>
+    <system:String x:Key="EN_AdminViewTotalHighPriorityNotes">High priority notes</system:String>
+    <system:String x:Key="EN_AdminViewTotalMediumPriorityNotes">Medium priority notes</system:String>
+    <system:String x:Key="EN_AdminViewTotalLowPriorityNotes">Low priority notes</system:String>
+    <system:String x:Key="EN_AdminViewTotalNotesCompletedPercentage">Completed notes (%)</system:String>
+    <system:String x:Key="EN_AdminViewTotalNotesNotCompletedPercentage">Not completed notes (%)</system:String>
+    <system:String x:Key="EN_AdminViewTotalNotesHighPriorityPercentage">High priority notes (%)</system:String>
+    <system:String x:Key="EN_AdminViewTotalNotesMediumPriorityPercentage">Medium priority notes (%)</system:String>
+    <system:String x:Key="EN_AdminViewTotalNotesLowPriorityPercentage">Low priority notes (%)</system:String>
+    <system:String x:Key="EN_AdminViewTab1TextBlock">Email or ID</system:String>
+    <system:String x:Key="EN_AdminViewTab2TextBlock1">User ID or Note ID</system:String>
+    <system:String x:Key="EN_AdminViewTab2TextBlock2">Title or content</system:String>
+    <system:String x:Key="EN_AdminViewTab2ComboBoxItem1">User ID</system:String>
+    <system:String x:Key="EN_AdminViewTab2BomboBoxItem2">Note ID</system:String>
+    <system:String x:Key="EN_AdminViewTab1Button">F I N D</system:String>
+    <system:String x:Key="EN_AdminViewTab2Button1">F I N D</system:String>
+    <system:String x:Key="EN_AdminViewTab2Button2">F I N D</system:String>
+    <system:String x:Key="EN_AdminViewTab2ButtonCombined">C O M B I N E D  S E A R C H</system:String>
+
+    <!--  AdminView -> CS  -->
+    <system:String x:Key="EN_AdminViewCSFindUserDataClickTextBoxEmpty">Please enter an email or ID</system:String>
+    <system:String x:Key="EN_AdminViewCSDontResultsFound">No results found</system:String>
+    <system:String x:Key="EN_AdminViewCSTbFromGoogleText">User from Google login:</system:String>
+    <system:String x:Key="EN_AdminViewCSTbNoteCount">Note count:</system:String>
+    <system:String x:Key="EN_AdminViewCSTbIsAdmin">Administrator:</system:String>
+    <system:String x:Key="EN_AdminViewCSErrorMessageNotUserID">
+        Please enter a user ID.
+        If entered, ensure you have entered only numbers.
+    </system:String>
+    <system:String x:Key="EN_AdminViewCSErrorMessageNotNoteID">
+        Please enter a note ID. If entered, ensure you have entered only numbers.
+    </system:String>
+    <system:String x:Key="EN_AdminViewCSErrorMessageNotAllFields">
+        Please enter all fields to perform a combined search
+    </system:String>
+    <system:String x:Key="EN_AdminViewCSErrorMessageNotAllFields2">
+        Please enter all fields to perform a combined search
+    </system:String>
+    <system:String x:Key="EN_AdminViewCSErrorMessageOnlyNumbersOnFirstField">
+        Enter only numbers in the first field
+    </system:String>
+    <system:String x:Key="EN_AdminViewCSErrorMessageOnlyNumbersOnFirstField2">
+        Enter only numbers in the first field
+    </system:String>
+    <system:String x:Key="EN_AdminViewCSErrorDontContent">
+        Please enter a title or content
+    </system:String>
+    <system:String x:Key="EN_AdminViewCSReport">
+        Note reported successfully
+    </system:String>
+    <system:String x:Key="EN_AdminViewCSReportCaption">
+        Success
+    </system:String>
+    <system:String x:Key="EN_AdminViewCSNotNotesFound">
+        No notes found
+    </system:String>
+    <system:String x:Key="EN_AdminViewCSLoadNotesIdNote">
+        Note ID:
+    </system:String>
+    <system:String x:Key="EN_AdminViewCSLoadNotesUserID">
+        User ID:
+    </system:String>
+    <system:String x:Key="EN_AdminViewCSLoadNotesPriority">
+        Priority:
+    </system:String>
+    <system:String x:Key="EN_AdminViewCSLoadNotesCompleted">
+        Completed:
+    </system:String>
+    <system:String x:Key="EN_AdminViewCSLoadNotesIdNoteDontFoundNotes">
+        No notes found
+    </system:String>
+    <system:String x:Key="EN_AdminViewCSLoadNotesIdNoteNoteID">
+        Note ID:
+    </system:String>
+    <system:String x:Key="EN_AdminViewCSLoadNotesIdNoteUserID">
+        User ID:
+    </system:String>
+    <system:String x:Key="EN_AdminViewCSLoadNotesIdNotePriority">
+        Priority:
+    </system:String>
+    <system:String x:Key="EN_AdminViewCSLoadNotesIdNoteCompleted">
+        Completed:
+    </system:String>
+    <system:String x:Key="EN_AdminViewCSLoadNotesTitlesAndBodiesDontFoundNotes">
+        No notes found
+    </system:String>
+    <system:String x:Key="EN_AdminViewCSLoadNotesTitlesAndBodiesIDNote">
+        Note ID:
+    </system:String>
+    <system:String x:Key="EN_AdminViewCSLoadNotesTitlesAndBodiesIDUser">
+        User ID:
+    </system:String>
+    <system:String x:Key="EN_AdminViewCSLoadNotesTitlesAndBodiesPriority">
+        Priority:
+    </system:String>
+    <system:String x:Key="EN_AdminViewCSLoadNotesTitlesAndBodiesCompleted">
+        Completed:
+    </system:String>
+    <system:String x:Key="EN_AdminViewCSLoadNotesTitlesAndBodiesIDNoteBodies">
+        Note ID:
+    </system:String>
+    <system:String x:Key="EN_AdminViewCSLoadNotesTitlesAndBodiesIDUserBodies">
+        User ID:
+    </system:String>
+    <system:String x:Key="EN_AdminViewCSLoadNotesTitlesAndBodiesPriorityBodies">
+        Priority:
+    </system:String>
+    <system:String x:Key="EN_AdminViewCSLoadNotesTitlesAndBodiesCompletedBodies">
+        Completed:
+    </system:String>
+
+    <!--  ExportFormatWindow  -->
+    <system:String x:Key="EN_ExportFormatWindowTitle">Choose a format</system:String>
+    <system:String x:Key="EN_ExportFormatWindowTextBlock">In which format do you want to export this note?</system:String>
+
+    <!--  ExportView  -->
+    <system:String x:Key="EN_ExportFormatViewTextBlock1">Destination Format</system:String>
+    <system:String x:Key="EN_ExportFormatViewComboBoxItem1">CSV</system:String>
+    <system:String x:Key="EN_ExportFormatViewComboBoxItem2">TXT</system:String>
+    <system:String x:Key="EN_ExportFormatViewButtonExport">E X P O R T</system:String>
+
+    <!--  ExportView -> ViewModel  -->
+    <system:String x:Key="EN_ExportFormatViewModelNoNotesMBText">No notes to export.</system:String>
+    <system:String x:Key="EN_ExportFormatViewModelHeader1">Title</system:String>
+    <system:String x:Key="EN_ExportFormatViewModelHeader2">Content</system:String>
+    <system:String x:Key="EN_ExportFormatViewModelHeader3">Priority</system:String>
+    <system:String x:Key="EN_ExportFormatViewModelHeader4">Completed</system:String>
+    <system:String x:Key="EN_ExportFormatViewModelTBSavedFileText">File saved successfully</system:String>
+    <system:String x:Key="EN_ExportFormatViewModelTBSavedFileCaption">File saved</system:String>
+    <system:String x:Key="EN_ExportFormatViewModelTBSavedFileErrorText">
+        An error occurred. If you are overwriting an existing file,
+        close it and try again.
+    </system:String>
+    <system:String x:Key="EN_ExportFormatViewModelTXTContent">========== NOTE ==========</system:String>
+    <system:String x:Key="EN_ExportFormatViewModelTXTTitleNoteHeader">Title:</system:String>
+    <system:String x:Key="EN_ExportFormatViewModelTXTBodyNoteHeader">Content:</system:String>
+    <system:String x:Key="EN_ExportFormatViewModelTXTPriorityNoteHeader">Priority:</system:String>
+    <system:String x:Key="EN_ExportFormatViewModelTXTCompletedNoteHeader">Completed:</system:String>
+
+    <!--  GraphicView  -->
+    <system:String x:Key="EN_GraphicViewPieChartSeries1Title">Completed</system:String>
+    <system:String x:Key="EN_GraphicViewPieChartSeries2Title">Not Completed</system:String>
+    <system:String x:Key="EN_GraphicViewPieChart2Series1Title">High</system:String>
+    <system:String x:Key="EN_GraphicViewPieChart2Series2Title">Medium</system:String>
+    <system:String x:Key="EN_GraphicViewPieChart2Series3Title">Low</system:String>
+    <system:String x:Key="EN_GraphicViewPieChartTextBlockDontNotes">No notes, add your first note to have charts.</system:String>
+    <system:String x:Key="EN_GraphicViewCaption">Graphics</system:String>
+    <system:String x:Key="EN_ExportViewCaption">Export your notes</system:String>
+
+    <!--  GraphicView -> CS  -->
+    <system:String x:Key="EN_GraphicViewCSPieChartSeriesTitleNotesCompleted">Completed Notes ({0}%)</system:String>
+    <system:String x:Key="EN_GraphicViewCSPieChartSeriesTitleNotesNoCompleted">Not Completed Notes ({0}%)</system:String>
+    <system:String x:Key="EN_GraphicViewCSPieChartSeriesTitleNotesHigh">High Priority ({0}%)</system:String>
+    <system:String x:Key="EN_GraphicViewCSPieChartSeriesTitleNotesMedium">Medium Priority ({0}%)</system:String>
+    <system:String x:Key="EN_GraphicViewCSPieChartSeriesTitleNotesLow">Low Priority ({0}%)</system:String>
+
+    <!--  HelpView  -->
+    <system:String x:Key="EN_HelpViewTextBlock">How can we help you?</system:String>
+    <system:String x:Key="EN_HelpViewSendButton">S E N D</system:String>
+    <system:String x:Key="EN_HelpViewCaption">Help</system:String>
+
+
+    <!--  HelpView -> CS  -->
+    <system:String x:Key="EN_HelpViewReportSent">Thanks for your message! We'll respond as soon as possible. You'll receive our response in your email.</system:String>
+    <system:String x:Key="EN_HelpViewReportSentCaption">Message sent</system:String>
+
+    <!--  LoginView  -->
+    <system:String x:Key="EN_LoginViewReadyTaskTextBlock">READY TASKS</system:String>
+    <system:String x:Key="EN_LoginViewEmailTextBlock">Email</system:String>
+    <system:String x:Key="EN_LoginViewPasswordTextBlock">Password</system:String>
+    <system:String x:Key="EN_LoginViewLoginButtonContent">LOG IN</system:String>
+    <system:String x:Key="EN_LoginViewRegisterButtonContent">REGISTER</system:String>
+
+    <!--  LoginView -> ViewModel  -->
+    <system:String x:Key="EN_LoginViewViewModelErrorLoginEmailOrPasswordWrong">Invalid email or password</system:String>
+    <system:String x:Key="EN_LoginViewViewModelErrorEmailPasswordExists">Credentials registered, please log in</system:String>
+    <system:String x:Key="EN_LoginViewViewModelErrorMailExists">Email already exists, please log in</system:String>
+
+    <!--  MainView  -->
+    <system:String x:Key="EN_MainViewReadyTasksTextBlock">READY TASKS</system:String>
+    <system:String x:Key="EN_MainViewDashboard">Your Notes</system:String>
+    <system:String x:Key="EN_MainViewDoGraphic">Graphics</system:String>
+    <system:String x:Key="EN_MainViewExportAllNotes">Export your notes</system:String>
+    <system:String x:Key="EN_MainViewSettings">Settings</system:String>
+    <system:String x:Key="EN_MainViewHelp">Help</system:String>
+    <system:String x:Key="MainViewCaption">Your Notes</system:String>
+
+    <!--  MainView -> ViewModel  -->
+    <system:String x:Key="EN_MainViewOpenedSecondaryViewSettings">Settings</system:String>
+
+    <!--  HomeView  -->
+    <system:String x:Key="EN_HomeViewCaption">Your Notes</system:String>
+
+    <!--  HomeView -> CS  -->
+    <system:String x:Key="EN_HomeViewDeleteConfirmationMBText">Are you sure you want to delete this note?</system:String>
+    <system:String x:Key="EN_HomeViewDeleteConfirmationMBCaption">Confirmation</system:String>
+    <system:String x:Key="EN_HomeViewConvertErrorMBText">An error occurred. If you are overwriting an existing file, close it and try again.</system:String>
+
+    <!--  HomeView -> ViewModel  -->
+    <system:String x:Key="EN_HomeViewViewModelExportNoteTitleHeader">Title</system:String>
+    <system:String x:Key="EN_HomeViewViewModelExportNoteBodyHeader">Content</system:String>
+    <system:String x:Key="EN_HomeViewViewModelExportNotePriorityHeader">Priority</system:String>
+    <system:String x:Key="EN_HomeViewViewModelExportNoteCompletedHeader">Completed</system:String>
+    <system:String x:Key="EN_HomeViewViewModelExportNoteCompletedMBText">File saved successfully</system:String>
+    <system:String x:Key="EN_HomeViewViewModelExportNoteCompletedMBCaption">File saved</system:String>
+    <system:String x:Key="EN_HomeViewViewModelNotificationMBWarningText">
+        WARNING: If clicking this button closes the program
+        and/or the program does not reopen,
+        please log out (on your computer) or restart the device.
+    </system:String>
+    <system:String x:Key="EN_HomeViewViewModelNotificationMBWarningCaption">Warning</system:String>
+    <system:String x:Key="EN_HomeViewViewModelNotificationFormText">Enter date and time</system:String>
+    <system:String x:Key="EN_HomeViewViewModelNotificationLabelText">
+        Enter the date and time in the format DD/MM/YYYY HH:MM.&#x0a;
+        Example: 10/05/2024 10:42
+    </system:String>
+    <system:String x:Key="EN_HomeViewViewModelNotificationMBErrorFormatText">Incorrect date and time format. Please enter the date and time in the format DD/MM/YYYY HH:MM.</system:String>
+    <system:String x:Key="EN_HomeViewViewModelNotificationMBErrorOldTimeText">The date and time cannot be earlier than or equal to the current date and time.</system:String>
+    <system:String x:Key="EN_HomeViewViewModelNotificationToastArgumentValue">ReadyTasks Note Notification</system:String>
+    <system:String x:Key="EN_HomeViewViewModelNotificationToastGroup">Message</system:String>
+
+    <!--  SettingsView  -->
+    <system:String x:Key="EN_SettingsViewTextBlock">Language</system:String>
+    <system:String x:Key="EN_SettingsViewComboBoxItem1">Spanish</system:String>
+    <system:String x:Key="EN_SettingsViewComboBoxItem2">English</system:String>
+    <system:String x:Key="EN_SettingsViewComboBoxItem3">Valencian</system:String>
+    <system:String x:Key="EN_SettingsViewTextBlockDeleteAllNotes">Delete all your notes</system:String>
+    <system:String x:Key="EN_SettingsViewTextBlockDeleteAllNotesClick">Click here to delete all your notes</system:String>
+    <system:String x:Key="EN_SettingsViewTextBlockDeleteAccount">Delete account</system:String>
+    <system:String x:Key="EN_SettingsViewTextBlockDeleteAccountClick">Click here to delete your account</system:String>
+
+    <!--  SettingsView -> ViewModel  -->
+    <system:String x:Key="EN_SettingsViewModelDeleteAllUserTBErrorAdminText">
+        You cannot delete the account because you are an administrator.
+        Contact us to have it deleted for you.
+    </system:String>
+    <system:String x:Key="EN_SettingsViewModelDeleteAllUserTBDeleteAccountWarningText">
+        Are you sure? This process is PERMANENT and WILL DELETE ALL YOUR NOTES WITHOUT RECOVERY.
+    </system:String>
+    <system:String x:Key="EN_SettingsViewModelDeleteAllUserTBDeleteAccountWarningCaption">
+        Warning
+    </system:String>
+    <system:String x:Key="EN_SettingsViewModelDeleteAllUserTBDeleteAccountOKText">
+        Account deleted successfully
+    </system:String>
+    <system:String x:Key="EN_SettingsViewModelDeleteAllUserTBDeleteAccountOKCaption">
+        Success
+    </system:String>
+    <system:String x:Key="EN_SettingsViewModelDeleteAllUserTBDeleteAccountError">
+        An error occurred. Please try again
+    </system:String>
+    <system:String x:Key="EN_SettingsViewModelDeleteAllNotesTBTextOK">
+        Notes deleted successfully
+    </system:String>
+    <system:String x:Key="EN_SettingsViewModelDeleteAllNotesTBCaptionOK">
+        Success
+    </system:String>
+
+    <!--  Repositories  -->
+    <!--  NoteRepository  -->
+    <system:String x:Key="EN_NoteRepositoryAddNoteToUserMBErrorText">A note with the same content already exists</system:String>
+    <system:String x:Key="EN_NoteRepositoryAddNoteToUserMBTextOK">Note added successfully</system:String>
+    <system:String x:Key="EN_NoteRepositoryAddNoteToUserMBTextCaption">Done</system:String>
+    <system:String x:Key="EN_NoteRepositoryEditNoteToUserMBTextOK">Note edited successfully</system:String>
+    <system:String x:Key="EN_NoteRepositoryEditNoteToUserMBTextERROR">An error occurred, please try again</system:String>
+    <system:String x:Key="EN_NoteRepositoryDeleteNoteToUserMBTextOK">Note deleted successfully</system:String>
+    <system:String x:Key="EN_NoteRepositoryMarkCompletedNoteToUserMBTextOK">Note marked as completed</system:String>
+    <system:String x:Key="EN_NoteRepositoryMarkUncompletedNoteToUserMBTextOK">Note marked as not completed</system:String>
+    <system:String x:Key="EN_NoteRepositoryDeleteAllNotesOnlyDontNotes">You don't have any notes</system:String>
+
+
+</ResourceDictionary>

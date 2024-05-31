@@ -1,0 +1,314 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+
+    <!--  AddNoteView  -->
+    <system:String x:Key="VA_AddNoteTitle">Afegir Nota</system:String>
+    <system:String x:Key="VA_AddNoteLabelTitleNote">TÍTOL</system:String>
+    <system:String x:Key="VA_AddNoteLabelContentNote">CONTINGUT</system:String>
+    <system:String x:Key="VA_AddNoteLabelPriority">PRIORITAT</system:String>
+    <system:String x:Key="VA_AddNoteComboBoxItemLow">Baixa</system:String>
+    <system:String x:Key="VA_AddNoteComboBoxItemMedium">Mitjana</system:String>
+    <system:String x:Key="VA_AddNoteComboBoxItemHigh">Alta</system:String>
+    <system:String x:Key="VA_AddNoteButtonSave">G U A R D A R</system:String>
+
+
+    <!--  EditNoteView  -->
+    <system:String x:Key="VA_EditNoteTitle">Editar Nota</system:String>
+    <system:String x:Key="VA_EditNoteTextBlockTitleNote">TÍTOL</system:String>
+    <system:String x:Key="VA_EditNoteTextBlockContentNote">CONTINGUT</system:String>
+    <system:String x:Key="VA_EditNoteTextBlockPriorityNote">PRIORITAT</system:String>
+    <system:String x:Key="VA_EditNoteComboBoxItemLow">Baixa</system:String>
+    <system:String x:Key="VA_EditNoteComboBoxItemMedium">Mitjana</system:String>
+    <system:String x:Key="VA_EditNoteComboBoxItemHigh">Alta</system:String>
+    <system:String x:Key="VA_EditNoteButtonSave">G U A R D A R</system:String>
+
+
+    <!--  EditNoteView -> CS  -->
+    <system:String x:Key="VA_EditNoteViewCSErrorMessage">
+        Ha ocorregut un error, intenta-ho de nou // Palleter
+    </system:String>
+
+
+    <!--  AdminView  -->
+    <system:String x:Key="VA_AdminViewTab1Header">Usuaris</system:String>
+    <system:String x:Key="VA_AdminViewTab2Header">Notes</system:String>
+    <system:String x:Key="VA_AdminViewTab3Header">Estadístiques</system:String>
+    <system:String x:Key="VA_AdminViewTotalUsers">Usuaris</system:String>
+    <system:String x:Key="VA_AdminViewTotalNotes">Notes</system:String>
+    <system:String x:Key="VA_AdminViewTotalCompletedNotes">Notes completades</system:String>
+    <system:String x:Key="VA_AdminViewTotalNoCompletedNotes">Notes no completades</system:String>
+    <system:String x:Key="VA_AdminViewTotalHighPriorityNotes">Notes amb prioritat alta</system:String>
+    <system:String x:Key="VA_AdminViewTotalMediumPriorityNotes">Notes amb prioritat mitjana</system:String>
+    <system:String x:Key="VA_AdminViewTotalLowPriorityNotes">Notes amb prioritat baixa</system:String>
+    <system:String x:Key="VA_AdminViewTotalNotesCompletedPercentage">Notes completades (%)</system:String>
+    <system:String x:Key="VA_AdminViewTotalNotesNoCompletedPercentage">Notes no completades (%)</system:String>
+    <system:String x:Key="VA_AdminViewTotalNotesHighPriorityPercentage">Notes amb prioritat alta (%)</system:String>
+    <system:String x:Key="VA_AdminViewTotalNotesMediumPriorityPercentage">Notes amb prioritat mitjana (%)</system:String>
+    <system:String x:Key="VA_AdminViewTotalNotesLowPriorityPercentage">Notes amb prioritat baixa (%)</system:String>
+    <system:String x:Key="VA_AdminViewTab1TextBlock">Email o ID</system:String>
+    <system:String x:Key="VA_AdminViewTab2TextBlock1">ID de usuari o ID de nota</system:String>
+    <system:String x:Key="VA_AdminViewTab2TextBlock2">Títol o contingut</system:String>
+    <system:String x:Key="VA_AdminViewTab2ComboBoxItem1">ID de usuari</system:String>
+    <system:String x:Key="VA_AdminViewTab2BomboBoxItem2">ID de nota</system:String>
+    <system:String x:Key="VA_AdminViewTab1Button">B U S C A R</system:String>
+    <system:String x:Key="VA_AdminViewTab2Button1">B U S C A R</system:String>
+    <system:String x:Key="VA_AdminViewTab2Button2">B U S C A R</system:String>
+    <system:String x:Key="VA_AdminViewTab2ButtonCombined">B Ú S Q U E D A  C O M B I N A D A</system:String>
+
+    <!--  AdminView -> CS  -->
+    <system:String x:Key="VA_AdminViewCSFindUserDataClickTextBoxEmpty">Per favor, ingrese un correu o ID</system:String>
+    <system:String x:Key="VA_AdminViewCSDontResultsFound">No s'han trobat resultats</system:String>
+    <system:String x:Key="VA_AdminViewCSTbFromGoogleText">Usuari del login de Google:</system:String>
+    <system:String x:Key="VA_AdminViewCSTbNoteCount">Cantitat de notes:</system:String>
+    <system:String x:Key="VA_AdminViewCSTbIsAdmin">Administrador:</system:String>
+    <system:String x:Key="VA_AdminViewCSErrorMessageNotUserID">
+        Per favor, ingrese un ID de usuari.
+        Si està ingresat asegures de que ha ingresat sols números.
+    </system:String>
+    <system:String x:Key="VA_AdminViewCSErrorMessageNotNoteID">
+        Per favor, ingrese un ID de nota. Si està ingresat assegure's de que ha ingresat sols números.
+    </system:String>
+    <system:String x:Key="VA_AdminViewCSErrorMessageNotAllFields">
+        Per favor, ingrese tots els camps per poder fer una búsqueda combinada
+    </system:String>
+    <system:String x:Key="VA_AdminViewCSErrorMessageNotAllFields2">
+        Per favor, ingrese tots els camps per poder fer una búsqueda combinada
+    </system:String>
+    <system:String x:Key="VA_AdminViewCSErrorMessageOnlyNumbersOnFirstField">
+        Ingresse sols números en el primer camp
+    </system:String>
+    <system:String x:Key="VA_AdminViewCSErrorMessageOnlyNumbersOnFirstField2">
+        Ingresse sols números en el primer camp
+    </system:String>
+    <system:String x:Key="VA_AdminViewCSErrorDontContent">
+        Per favor, ingrese un títol o contingut
+    </system:String>
+    <system:String x:Key="VA_AdminViewCSReport">
+        Nota reportada amb èxit
+    </system:String>
+    <system:String x:Key="VA_AdminViewCSReportCaption">
+        Èxit
+    </system:String>
+    <system:String x:Key="VA_AdminViewCSNotNotesFound">
+        No s'han trobat notes
+    </system:String>
+    <system:String x:Key="VA_AdminViewCSLoadNotesIdNote">
+        Id Nota:
+    </system:String>
+    <system:String x:Key="VA_AdminViewCSLoadNotesUserID">
+        Id Usuari:
+    </system:String>
+    <system:String x:Key="VA_AdminViewCSLoadNotesPriority">
+        Prioritat:
+    </system:String>
+    <system:String x:Key="VA_AdminViewCSLoadNotesCompleted">
+        Completada:
+    </system:String>
+    <system:String x:Key="VA_AdminViewCSLoadNotesIdNoteDontFoundNotes">
+        No s'han trobat notes
+    </system:String>
+    <system:String x:Key="VA_AdminViewCSLoadNotesIdNoteNoteID">
+        ID Nota:
+    </system:String>
+    <system:String x:Key="VA_AdminViewCSLoadNotesIdNoteUserID">
+        ID Usuari:
+    </system:String>
+    <system:String x:Key="VA_AdminViewCSLoadNotesIdNotePriority">
+        Prioritat:
+    </system:String>
+    <system:String x:Key="VA_AdminViewCSLoadNotesIdNoteCompleted">
+        Completada:
+    </system:String>
+    <system:String x:Key="VA_AdminViewCSLoadNotesTitlesAndBodiesDontFoundNotes">
+        No s'han trobat notes
+    </system:String>
+    <system:String x:Key="VA_AdminViewCSLoadNotesTitlesAndBodiesIDNote">
+        ID Nota:
+    </system:String>
+    <system:String x:Key="VA_AdminViewCSLoadNotesTitlesAndBodiesIDUser">
+        ID Usuari:
+    </system:String>
+    <system:String x:Key="VA_AdminViewCSLoadNotesTitlesAndBodiesPriority">
+        Prioritat:
+    </system:String>
+    <system:String x:Key="VA_AdminViewCSLoadNotesTitlesAndBodiesCompleted">
+        Completada:
+    </system:String>
+    <system:String x:Key="VA_AdminViewCSLoadNotesTitlesAndBodiesIDNoteBodies">
+        ID Nota:
+    </system:String>
+    <system:String x:Key="VA_AdminViewCSLoadNotesTitlesAndBodiesIDUserBodies">
+        ID Usuari:
+    </system:String>
+    <system:String x:Key="VA_AdminViewCSLoadNotesTitlesAndBodiesPriorityBodies">
+        Prioritat:
+    </system:String>
+    <system:String x:Key="VA_AdminViewCSLoadNotesTitlesAndBodiesCompletedBodies">
+        Completada:
+    </system:String>
+    <!--  ExportFormatWindow  -->
+    <system:String x:Key="VA_ExportFormatWindowTitle">Tria un format</system:String>
+    <system:String x:Key="VA_ExportFormatWindowTextBlock">¿En quin format desitges exportar aquesta nota?</system:String>
+
+    <!--  ExportView  -->
+    <system:String x:Key="VA_ExportFormatViewTextBlock1">Format de destí</system:String>
+    <system:String x:Key="VA_ExportFormatViewComboBoxItem1">CSV</system:String>
+    <system:String x:Key="VA_ExportFormatViewComboBoxItem2">TXT</system:String>
+    <system:String x:Key="VA_ExportFormatViewButtonExport">E X P O R T A R</system:String>
+
+    <!--  ExportView -> ViewModel  -->
+    <system:String x:Key="VA_ExportFormatViewModelNoNotesMBText">No hi ha notes que exportar.</system:String>
+    <system:String x:Key="VA_ExportFormatViewModelHeader1">Títol</system:String>
+    <system:String x:Key="VA_ExportFormatViewModelHeader2">Contingut</system:String>
+    <system:String x:Key="VA_ExportFormatViewModelHeader3">Prioritat</system:String>
+    <system:String x:Key="VA_ExportFormatViewModelHeader4">Completat</system:String>
+    <system:String x:Key="VA_ExportFormatViewModelTBSavedFileText">Arxiu guardat correctament</system:String>
+    <system:String x:Key="VA_ExportFormatViewModelTBSavedFileCaption">Arxiu guardat</system:String>
+    <system:String x:Key="VA_ExportFormatViewModelTBSavedFileErrorText">
+        Ha ocurrit un error. Si está sobreescrivint un arxiu
+        ja existent, tanque-ho i intente-ho de nou.
+    </system:String>
+    <system:String x:Key="VA_ExportFormatViewModelTXTContent">========== NOTA ==========</system:String>
+    <system:String x:Key="VA_ExportFormatViewModelTXTTitleNoteHeader">Títol:</system:String>
+    <system:String x:Key="VA_ExportFormatViewModelTXTBodyNoteHeader">Contingut:</system:String>
+    <system:String x:Key="VA_ExportFormatViewModelTXTPriorityNoteHeader">Prioritat:</system:String>
+    <system:String x:Key="VA_ExportFormatViewModelTXTCompletedNoteHeader">Completada:</system:String>
+
+    <!--  GraphicView  -->
+    <system:String x:Key="VA_GraphicViewPieChartSeries1Title">Completada</system:String>
+    <system:String x:Key="VA_GraphicViewPieChartSeries2Title">No completada</system:String>
+    <system:String x:Key="VA_GraphicViewPieChart2Series1Title">Alta</system:String>
+    <system:String x:Key="VA_GraphicViewPieChart2Series2Title">Mitjana</system:String>
+    <system:String x:Key="VA_GraphicViewPieChart2Series3Title">Baixa</system:String>
+    <system:String x:Key="VA_GraphicViewPieChartTextBlockDontNotes">No hi ha notes, anyadix la teua primera nota per a tindre gràfics.</system:String>
+    <system:String x:Key="VA_GraphicViewCaption">Gràfics</system:String>
+    <system:String x:Key="VA_ExportViewCaption">Exportar notes</system:String>
+
+    <!--  GraphicView -> CS  -->
+    <system:String x:Key="VA_GraphicViewCSPieChartSeriesTitleNotesCompleted">Notes completades ({0}%)</system:String>
+    <system:String x:Key="VA_GraphicViewCSPieChartSeriesTitleNotesNoCompleted">Notes no completades ({0}%)</system:String>
+    <system:String x:Key="VA_GraphicViewCSPieChartSeriesTitleNotesHigh">Prioritat alta ({0}%)</system:String>
+    <system:String x:Key="VA_GraphicViewCSPieChartSeriesTitleNotesMedium">Prioritat mitjana ({0}%)</system:String>
+    <system:String x:Key="VA_GraphicViewCSPieChartSeriesTitleNotesLow">Prioritat baixa ({0}%)</system:String>
+
+    <!--  HelpView  -->
+    <system:String x:Key="VA_HelpViewTextBlock">¿En què et podem ajudar?</system:String>
+    <system:String x:Key="VA_HelpViewSendButton">E N V I A R</system:String>
+    <system:String x:Key="VA_HelpViewCaption">Ajuda</system:String>
+
+    <!--  HelpView -> CS  -->
+    <system:String x:Key="VA_HelpViewReportSent">¡Gracias pel teu missatge! Respondrem amb la major brevetat. Rebràs la resposta al teu correu</system:String>
+    <system:String x:Key="VA_HelpViewReportSentCaption">Missatge enviat</system:String>
+
+    <!--  LoginView  -->
+    <system:String x:Key="VA_LoginViewReadyTaskTextBlock">READY TASKS</system:String>
+    <system:String x:Key="VA_LoginViewEmailTextBlock">Email</system:String>
+    <system:String x:Key="VA_LoginViewPasswordTextBlock">Contrasenya</system:String>
+    <system:String x:Key="VA_LoginViewLoginButtonContent">INICIAR SESSIÓ</system:String>
+    <system:String x:Key="VA_LoginViewRegisterButtonContent">REGISTRA'T</system:String>
+
+    <!--  LoginView -> ViewModel  -->
+    <system:String x:Key="VA_LoginViewViewModelErrorLoginEmailOrPasswordWrong">Correu o contrasenya invàlids</system:String>
+    <system:String x:Key="VA_LoginViewViewModelErrorEmailPasswordExists">Credencials registrades, per favor inicia sessió</system:String>
+    <system:String x:Key="VA_LoginViewViewModelErrorMailExists">El correu ja existeix, per favor inicia sessió</system:String>
+
+    <!--  MainView  -->
+    <system:String x:Key="VA_MainViewReadyTasksTextBlock">READY TASKS</system:String>
+    <system:String x:Key="VA_MainViewDashboard">Notes</system:String>
+    <system:String x:Key="VA_MainViewDoGraphic">Gràfics</system:String>
+    <system:String x:Key="VA_MainViewExportAllNotes">Exportar notes</system:String>
+    <system:String x:Key="VA_MainViewSettings">Ajustos</system:String>
+    <system:String x:Key="VA_MainViewHelp">Ajuda</system:String>
+    <system:String x:Key="VA_MainViewCaption">Notes</system:String>
+
+    <!--  MainView -> ViewModel  -->
+    <system:String x:Key="VA_MainViewOpenedSecondaryViewSettings">Settings</system:String>
+
+    <!--  HomeView  -->
+    <system:String x:Key="VA_HomeViewCaption">Notes</system:String>
+
+    <!--  HomeView -> CS  -->
+    <system:String x:Key="VA_HomeViewDeleteConfirmationMBText">¿Estàs segur de que dessitges eliminar aquesta nota?</system:String>
+    <system:String x:Key="VA_HomeViewDeleteConfirmationMBCaption">Confirmació</system:String>
+    <system:String x:Key="VA_HomeViewConvertErrorMBText">
+        Ha ocurrit un error. Si está sobreescrivint un Arxiu
+        ja existent, tanque-ho i intente-ho de nou.
+    </system:String>
+
+    <!--  HomeView -> ViewModel  -->
+    <system:String x:Key="VA_HomeViewViewModelExportNoteTitleHeader">Títol</system:String>
+    <system:String x:Key="VA_HomeViewViewModelExportNoteBodyHeader">Contingut</system:String>
+    <system:String x:Key="VA_HomeViewViewModelExportNotePriorityHeader">Prioritat</system:String>
+    <system:String x:Key="VA_HomeViewViewModelExportNoteCompletedHeader">Completada</system:String>
+    <system:String x:Key="VA_HomeViewViewModelExportNoteCompletedMBText">Arxiu guardat correctament</system:String>
+    <system:String x:Key="VA_HomeViewViewModelExportNoteCompletedMBCaption">Arxiu guardat</system:String>
+    <system:String x:Key="VA_HomeViewViewModelNotificationMBWarningText">
+        ATENCIÓ: Si al polsar aquest botó es tanca el programa
+        i/o el programa no torna a obrir,
+        per favor tanque la sessió (a l'ordinador) o reinicie el dispositiu.
+    </system:String>
+    <system:String x:Key="VA_HomeViewViewModelNotificationMBWarningCaption">Alerta</system:String>
+    <system:String x:Key="VA_HomeViewViewModelNotificationFormText">Introduir data i hora</system:String>
+    <system:String x:Key="VA_HomeViewViewModelNotificationLabelText">
+        Introdueix la data i hora en format DD/MM/YYYY HH:MM.&#x0a;
+        Exemple: 10/05/2024 10:42
+    </system:String>
+    <system:String x:Key="VA_HomeViewViewModelNotificationMBErrorFormatText">Format de data i hora incorrecte. Per favor, introdueix la data i hora en el format DD/MM/YYYY HH:MM.</system:String>
+    <system:String x:Key="VA_HomeViewViewModelNotificationMBErrorOldTimeText">La data i hora no pot ser anterior o igual a la data i hora actual.</system:String>
+    <system:String x:Key="VA_HomeViewViewModelNotificationToastArgumentValue">Notificació de Nota ReadyTasks</system:String>
+    <system:String x:Key="VA_HomeViewViewModelNotificationToastGroup">Missatge</system:String>
+
+    <!--  SettingsView  -->
+    <system:String x:Key="VA_SettingsViewTextBlock">Idioma</system:String>
+    <system:String x:Key="VA_SettingsViewComboBoxItem1">Castellà</system:String>
+    <system:String x:Key="VA_SettingsViewComboBoxItem2">Anglés</system:String>
+    <system:String x:Key="VA_SettingsViewComboBoxItem3">Valencià</system:String>
+    <system:String x:Key="VA_SettingsViewTextBlockDeleteAllNotes">Eliminar totes les teues notes</system:String>
+    <system:String x:Key="VA_SettingsViewTextBlockDeleteAllNotesClick">Polsa aquí per eliminar todas les teues notes</system:String>
+    <system:String x:Key="VA_SettingsViewTextBlockDeleteAccount">Eliminar el teu compte</system:String>
+    <system:String x:Key="VA_SettingsViewTextBlockDeleteAccountClick">Polsa aquí per eliminar el teu compte</system:String>
+
+    <!--  SettingsView -> ViewModel  -->
+    <system:String x:Key="VA_SettingsViewModelDeleteAllUserTBErrorAdminText">
+        No pots eliminar el compte ja que ets administrador.
+        Contacta amb nosaltres per a que l'eliminem per tu.
+    </system:String>
+    <system:String x:Key="VA_SettingsViewModelDeleteAllUserTBDeleteAccountWarningText">
+        ¿Estàs segur? Aquest procés es PERMAMENT i ELIMINARÁ TOTES LES TEUES NOTES SENSE PODER RECUPERARLES
+    </system:String>
+    <system:String x:Key="VA_SettingsViewModelDeleteAllUserTBDeleteAccountWarningCaption">
+        Alerta
+    </system:String>
+    <system:String x:Key="VA_SettingsViewModelDeleteAllUserTBDeleteAccountOKText">
+        Compte eliminat correctament
+    </system:String>
+    <system:String x:Key="VA_SettingsViewModelDeleteAllUserTBDeleteAccountOKCaption">
+        Èxit
+    </system:String>
+    <system:String x:Key="VA_SettingsViewModelDeleteAllUserTBDeleteAccountError">
+        Ha ocurrit un error. Intente-ho de nou
+    </system:String>
+    <system:String x:Key="VA_SettingsViewModelDeleteAllNotesTBTextOK">
+        Notes eliminades correctament
+    </system:String>
+    <system:String x:Key="VA_SettingsViewModelDeleteAllNotesTBCaptionOK">
+        Èxit
+    </system:String>
+
+
+    <!--  Repositories  -->
+    <!--  NoteRepository  -->
+    <system:String x:Key="VA_NoteRepositoryAddNoteToUserMBErrorText">Ja existeix una nota amb el mateix contingut</system:String>
+    <system:String x:Key="VA_NoteRepositoryAddNoteToUserMBTextOK">Nota agregada correctament</system:String>
+    <system:String x:Key="VA_NoteRepositoryAddNoteToUserMBTextCaption">Llest</system:String>
+    <system:String x:Key="VA_NoteRepositoryEditNoteToUserMBTextOK">Nota editada correctament</system:String>
+    <system:String x:Key="VA_NoteRepositoryEditNoteToUserMBTextERROR">Ha ocurrit un error, intente-ho de nou</system:String>
+    <system:String x:Key="VA_NoteRepositoryDeleteNoteToUserMBTextOK">Nota eliminada correctament</system:String>
+    <system:String x:Key="VA_NoteRepositoryMarkCompletedNoteToUserMBTextOK">Nota marcada com completada</system:String>
+    <system:String x:Key="VA_NoteRepositoryMarkUncompletedNoteToUserMBTextOK">Nota marcada com no completada</system:String>
+    <system:String x:Key="VA_NoteRepositoryDeleteAllNotesOnlyDontNotes">No tens notes</system:String>
+
+</ResourceDictionary>

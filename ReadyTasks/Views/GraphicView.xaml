@@ -1,0 +1,103 @@
+﻿<UserControl
+    x:Class="ReadyTasks.Views.GraphicView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:ReadyTasks.Views"
+    xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Grid x:Name="myGrid">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Rectangle
+                x:Name="r1"
+                Width="380"
+                Height="372"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Fill="#CCCCCC"
+                RadiusX="10"
+                RadiusY="10"
+                Stroke="Black"
+                Style="{StaticResource Shadow}" />
+            <lvc:PieChart
+                Name="PieChartCompletedNoCompleted"
+                Grid.Column="0"
+                Width="350"
+                Height="350"
+                LegendLocation="Bottom">
+                <lvc:PieChart.Series>
+                    <lvc:PieSeries Title="{StaticResource GraphicViewPieChartSeries1Title}" FontFamily="Montserrat" />
+                    <lvc:PieSeries Title="{StaticResource GraphicViewPieChartSeries2Title}" FontFamily="Montserrat" />
+                </lvc:PieChart.Series>
+            </lvc:PieChart>
+            <Rectangle
+                x:Name="r2"
+                Grid.Column="1"
+                Width="380"
+                Height="372"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Fill="#CCCCCC"
+                RadiusX="10"
+                RadiusY="10"
+                Stroke="Black"
+                Style="{StaticResource Shadow}" />
+            <lvc:PieChart
+                Name="PieChartPriority"
+                Grid.Column="1"
+                Width="350"
+                Height="350"
+                LegendLocation="Bottom">
+                <lvc:PieChart.Series>
+                    <lvc:PieSeries
+                        Title="{StaticResource GraphicViewPieChart2Series1Title}"
+                        Fill="Red"
+                        FontFamily="Montserrat" />
+                    <lvc:PieSeries
+                        Title="{StaticResource GraphicViewPieChart2Series2Title}"
+                        Fill="Orange"
+                        FontFamily="Montserrat" />
+                    <lvc:PieSeries
+                        Title="{StaticResource GraphicViewPieChart2Series3Title}"
+                        Fill="White"
+                        FontFamily="Montserrat" />
+                </lvc:PieChart.Series>
+            </lvc:PieChart>
+
+            <Rectangle
+                x:Name="rDontNotes"
+                Grid.ColumnSpan="2"
+                Width="700"
+                Height="372"
+                Margin="61,0,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                Fill="#CCCCCC"
+                RadiusX="10"
+                RadiusY="10"
+                Stroke="Black"
+                Style="{StaticResource Shadow}"
+                Visibility="Collapsed" />
+            <TextBlock
+                x:Name="tbDontNotes"
+                Grid.ColumnSpan="2"
+                Width="378"
+                Margin="222,0,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                FontSize="32"
+                FontWeight="Bold"
+                Text="{StaticResource GraphicViewPieChartTextBlockDontNotes}"
+                TextWrapping="Wrap"
+                Visibility="Collapsed" />
+
+        </Grid>
+    </ScrollViewer>
+</UserControl>

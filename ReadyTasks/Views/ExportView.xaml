@@ -1,0 +1,156 @@
+﻿<UserControl
+    x:Class="ReadyTasks.Views.ExportView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:ReadyTasks.Views"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:materialDesignConverters="clr-namespace:MaterialDesignThemes.Wpf.Converters;assembly=MaterialDesignThemes.Wpf"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    SizeChanged="ExportView_SizeChanged"
+    mc:Ignorable="d">
+    <Grid>
+        <Rectangle
+            x:Name="rectangle"
+            Width="800"
+            Height="600"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Fill="White"
+            RadiusX="10"
+            RadiusY="10"
+            Stroke="Black"
+            Style="{StaticResource Shadow}" />
+        <StackPanel
+            x:Name="stackPanel"
+            Margin="128,69,108,78"
+            Orientation="Vertical">
+            <TextBlock
+                x:Name="tbChooseFormat"
+                Width="502"
+                Height="90"
+                Margin="0,80,0,0"
+                HorizontalAlignment="Center"
+                FontFamily="Montserrat"
+                FontSize="40"
+                FontWeight="Medium"
+                Foreground="Black"
+                Text="{StaticResource ExportFormatViewTextBlock1}"
+                TextAlignment="Center"
+                TextWrapping="Wrap" />
+            <ComboBox
+                x:Name="cbFormat"
+                Width="68"
+                Margin="0,40,0,0"
+                SelectedIndex="0">
+                <ComboBox.Resources>
+                    <Style TargetType="{x:Type ComboBox}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type ComboBox}">
+                                    <Border BorderThickness="1" CornerRadius="1">
+                                        <Border.BorderBrush>
+                                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                                <GradientStop Offset="0.0" Color="Pink" />
+                                                <GradientStop Offset="1.0" Color="DarkCyan" />
+                                            </LinearGradientBrush>
+                                        </Border.BorderBrush>
+                                        <Grid>
+                                            <ToggleButton
+                                                Grid.Column="2"
+                                                ClickMode="Press"
+                                                Focusable="false"
+                                                IsChecked="{Binding IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
+                                            <ContentPresenter
+                                                Margin="{TemplateBinding Padding}"
+                                                HorizontalAlignment="Left"
+                                                VerticalAlignment="Center"
+                                                Content="{TemplateBinding SelectionBoxItem}"
+                                                ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}"
+                                                ContentTemplateSelector="{TemplateBinding ItemTemplateSelector}"
+                                                IsHitTestVisible="False" />
+                                            <TextBox
+                                                x:Name="PART_EditableTextBox"
+                                                Margin="{TemplateBinding Padding}"
+                                                HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+                                                Background="Transparent"
+                                                IsReadOnly="{Binding IsReadOnly, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                                Visibility="Hidden" />
+                                            <Popup
+                                                x:Name="PART_Popup"
+                                                AllowsTransparency="True"
+                                                Focusable="False"
+                                                IsOpen="{TemplateBinding IsDropDownOpen}"
+                                                Placement="Bottom"
+                                                PopupAnimation="Slide">
+                                                <Grid
+                                                    x:Name="DropDown"
+                                                    MinWidth="{TemplateBinding ActualWidth}"
+                                                    MaxHeight="{TemplateBinding MaxDropDownHeight}"
+                                                    SnapsToDevicePixels="True">
+                                                    <Border
+                                                        x:Name="DropDownBorder"
+                                                        Background="White"
+                                                        BorderThickness="1"
+                                                        CornerRadius="10">
+                                                        <Border.BorderBrush>
+                                                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                                                <GradientStop Offset="0.0" Color="Pink" />
+                                                                <GradientStop Offset="1.0" Color="DarkCyan" />
+                                                            </LinearGradientBrush>
+                                                        </Border.BorderBrush>
+                                                    </Border>
+                                                    <ScrollViewer Margin="4,6,4,6" SnapsToDevicePixels="True">
+                                                        <StackPanel IsItemsHost="True" KeyboardNavigation.DirectionalNavigation="Contained" />
+                                                    </ScrollViewer>
+                                                </Grid>
+                                            </Popup>
+                                        </Grid>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </ComboBox.Resources>
+                <ComboBoxItem Content="{StaticResource ExportFormatViewComboBoxItem1}" />
+                <ComboBoxItem Content="{StaticResource ExportFormatViewComboBoxItem2}" />
+            </ComboBox>
+            <Button
+                x:Name="btnExport"
+                Width="384"
+                Height="114"
+                Margin="0,40,0,0"
+                Background="Transparent"
+                BorderBrush="Transparent"
+                Click="btnExport_Click"
+                Content="{StaticResource ExportFormatViewButtonExport}"
+                FontFamily="Montserrat"
+                FontSize="50"
+                FontWeight="Medium"
+                Foreground="Green">
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+
+                        <Border Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="Transparent" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+        </StackPanel>
+
+    </Grid>
+
+
+</UserControl>
+
+
+

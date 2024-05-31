@@ -1,0 +1,286 @@
+﻿<Window
+    x:Class="ReadyTasks.Views.LoginView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:customcontrols="clr-namespace:ReadyTasks.CustomControls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:ReadyTasks.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewModel="clr-namespace:ReadyTasks.ViewModels"
+    Title="Ready Tasks"
+    Width="1280"
+    Height="720"
+    AllowsTransparency="True"
+    Background="Transparent"
+    Closed="Window_Closed"
+    MouseDown="Window_MouseDown"
+    ResizeMode="NoResize"
+    WindowStartupLocation="CenterScreen"
+    WindowStyle="None"
+    mc:Ignorable="d">
+
+    <Window.DataContext>
+        <viewModel:LoginViewModel />
+    </Window.DataContext>
+
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibility" />
+    </Window.Resources>
+
+    <Window.Visibility>
+        <Binding
+            Converter="{StaticResource BooleanToVisibility}"
+            Mode="TwoWay"
+            Path="IsViewVisible" />
+    </Window.Visibility>
+
+    <Border CornerRadius="50">
+        <Border.Background>
+            <ImageBrush ImageSource="/Images/Login/background-login.jpg" Stretch="None" />
+        </Border.Background>
+        <Border
+            Background="#c0c0c0"
+            BorderBrush="#5c6e91"
+            BorderThickness="10"
+            CornerRadius="47"
+            Opacity="0.9">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="1" Margin="0,39,0,536">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="21.5" />
+                        <ColumnDefinition Width="3.5" />
+                        <ColumnDefinition Width="25" />
+                        <ColumnDefinition Width="15" />
+                    </Grid.ColumnDefinitions>
+
+                    <Button
+                        x:Name="btnMinimize"
+                        Grid.Column="1"
+                        Grid.ColumnSpan="3"
+                        Margin="5,-456,19,456"
+                        BorderThickness="0"
+                        Click="btnMinimize_Click"
+                        Content="-"
+                        Cursor="Hand"
+                        FontSize="20">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="#ffbd44" />
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#ff9966" />
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border
+                                    Width="18"
+                                    Height="18"
+                                    Background="{TemplateBinding Background}"
+                                    CornerRadius="9">
+                                    <ContentPresenter
+                                        Margin="0,-6,0,0"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center" />
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button
+                        x:Name="btnClose"
+                        Grid.Column="3"
+                        Margin="0,-456,0,456"
+                        BorderThickness="0"
+                        Click="btnClose_Click"
+                        Content="X"
+                        Cursor="Hand"
+                        FontSize="16"
+                        RenderTransformOrigin="0.06,0.335">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="#ff5f57" />
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#ff3d3a" />
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border
+                                    Width="18"
+                                    Height="18"
+                                    Background="{TemplateBinding Background}"
+                                    CornerRadius="9">
+                                    <ContentPresenter
+                                        Margin="0,-2,0,0"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center" />
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                </Grid>
+                <StackPanel
+                    Grid.Row="1"
+                    Width="300"
+                    Margin="265,18,265,17"
+                    Orientation="Vertical">
+                    <Image
+                        x:Name="imgLogo"
+                        Width="250"
+                        Height="213"
+                        Source="/Images/Login/logo.png" />
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        FontSize="24"
+                        FontWeight="Bold"
+                        Foreground="Black"
+                        Text="{StaticResource LoginViewReadyTaskTextBlock}" />
+                    <TextBlock
+                        Margin="0,30,0,0"
+                        HorizontalAlignment="Center"
+                        FontSize="16"
+                        FontWeight="Bold"
+                        Foreground="Black"
+                        Text="{StaticResource LoginViewEmailTextBlock}" />
+                    <TextBox
+                        x:Name="txtUser"
+                        Height="30"
+                        Margin="0,5,0,0"
+                        Padding="30,0,0,0"
+                        VerticalAlignment="Center"
+                        BorderBrush="#5c6e91"
+                        BorderThickness="0,0,0,5"
+                        CaretBrush="#5c6e91"
+                        FontSize="16"
+                        FontWeight="Bold"
+                        Foreground="Black"
+                        Text="{Binding Username, UpdateSourceTrigger=PropertyChanged}">
+                        <TextBox.Background>
+                            <ImageBrush
+                                AlignmentX="Left"
+                                ImageSource="/Images/Login/user.png"
+                                Stretch="Uniform" />
+                        </TextBox.Background>
+                    </TextBox>
+                    <TextBlock
+                        x:Name="tbPassword"
+                        Margin="0,30,0,0"
+                        HorizontalAlignment="Center"
+                        FontSize="16"
+                        FontWeight="Bold"
+                        Foreground="Black"
+                        Text="{StaticResource LoginViewPasswordTextBlock}" />
+                    <customcontrols:BindablePasswordBox
+                        x:Name="txtPassword"
+                        Height="30"
+                        Margin="0,5,0,0"
+                        Password="{Binding Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                    <TextBlock
+                        Margin="0,10,0,10"
+                        HorizontalAlignment="Center"
+                        FontSize="12"
+                        FontWeight="Bold"
+                        Foreground="#D7596D"
+                        Text="{Binding ErrorMessage}" />
+                    <Button
+                        x:Name="btnLogin"
+                        BorderThickness="0"
+                        Command="{Binding LoginCommand}"
+                        Content="{StaticResource LoginViewLoginButtonContent}"
+                        Cursor="Hand"
+                        FontWeight="Bold"
+                        Foreground="Black">
+                        <Button.Style>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="Background" Value="#28AEED" />
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#278BEF" />
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                        <Button.Template>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border
+                                    Width="150"
+                                    Height="30"
+                                    Background="{TemplateBinding Background}"
+                                    CornerRadius="15">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button
+                        x:Name="btnLogin_Register"
+                        Width="150"
+                        Margin="5,5,5,5"
+                        BorderThickness="0"
+                        Command="{Binding RegisterCommand}"
+                        Content="{StaticResource LoginViewRegisterButtonContent}"
+                        Cursor="Hand"
+                        FontWeight="Bold"
+                        Foreground="Black">
+                        <Button.Style>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="Background" Value="#28AEED" />
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#278BEF" />
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                        <Button.Template>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border
+                                    Width="150"
+                                    Height="30"
+                                    Background="{TemplateBinding Background}"
+                                    CornerRadius="15">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Image
+                        Width="70"
+                        Height="74"
+                        MouseLeftButtonDown="googleLoginClick"
+                        Source="/Images/Login/googleIcon.png" />
+                </StackPanel>
+                <TextBox
+                    x:Name="txtShowPassword"
+                    Grid.Row="1"
+                    Height="30"
+                    Margin="505,405,505,0"
+                    Padding="30,0,0,0"
+                    VerticalAlignment="Top"
+                    Background="Transparent"
+                    BorderBrush="#5c6e91"
+                    BorderThickness="0,0,0,5"
+                    CaretBrush="#5c6e91"
+                    FontSize="16"
+                    FontWeight="Bold"
+                    Foreground="Black"
+                    Visibility="Hidden" />
+                <Image
+                    Grid.Row="1"
+                    Margin="480,408,755,985"
+                    Source="/Images/Login/password.png" />
+            </Grid>
+        </Border>
+    </Border>
+</Window>

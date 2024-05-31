@@ -1,0 +1,315 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+
+    <!--  AddNoteView  -->
+    <system:String x:Key="AddNoteTitle">Añadir Nota</system:String>
+    <system:String x:Key="AddNoteLabelTitleNote">TÍTULO</system:String>
+    <system:String x:Key="AddNoteLabelContentNote">CONTENIDO</system:String>
+    <system:String x:Key="AddNoteLabelPriority">PRIORIDAD</system:String>
+    <system:String x:Key="AddNoteComboBoxItemLow">Baja</system:String>
+    <system:String x:Key="AddNoteComboBoxItemMedium">Media</system:String>
+    <system:String x:Key="AddNoteComboBoxItemHigh">Alta</system:String>
+    <system:String x:Key="AddNoteButtonSave">G U A R D A R</system:String>
+
+
+    <!--  EditNoteView  -->
+    <system:String x:Key="EditNoteTitle">Editar Nota</system:String>
+    <system:String x:Key="EditNoteTextBlockTitleNote">TÍTULO</system:String>
+    <system:String x:Key="EditNoteTextBlockContentNote">CONTENIDO</system:String>
+    <system:String x:Key="EditNoteTextBlockPriorityNote">PRIORIDAD</system:String>
+    <system:String x:Key="EditNoteComboBoxItemLow">Baja</system:String>
+    <system:String x:Key="EditNoteComboBoxItemMedium">Media</system:String>
+    <system:String x:Key="EditNoteComboBoxItemHigh">Alta</system:String>
+    <system:String x:Key="EditNoteButtonSave">G U A R D A R</system:String>
+
+    <!--  EditNoteView -> CS  -->
+    <system:String x:Key="EditNoteViewCSErrorMessage">
+        Ha ocurrido un error, inténtalo de nuevo
+    </system:String>
+
+
+    <!--  AdminView  -->
+    <system:String x:Key="AdminViewTab1Header">Usuarios</system:String>
+    <system:String x:Key="AdminViewTab2Header">Notas</system:String>
+    <system:String x:Key="AdminViewTab3Header">Estadísticas</system:String>
+    <system:String x:Key="AdminViewTotalUsers">Usuarios</system:String>
+    <system:String x:Key="AdminViewTotalNotes">Notas</system:String>
+    <system:String x:Key="AdminViewTotalNotesCompleted">Notas completadas</system:String>
+    <system:String x:Key="AdminViewTotalNotesNoCompleted">Notas no completadas</system:String>
+    <system:String x:Key="AdminViewTotalNotesHigh">Notas con prioridad alta</system:String>
+    <system:String x:Key="AdminViewTotalNotesMedium">Notas con prioridad media</system:String>
+    <system:String x:Key="AdminViewTotalNotesLow">Notas con prioridad baja</system:String>
+    <system:String x:Key="AdminViewTotalNotesCompletedPercentage">Notas completadas (%)</system:String>
+    <system:String x:Key="AdminViewTotalNotesNoCompletedPercentage">Notas no completadas (%)</system:String>
+    <system:String x:Key="AdminViewTotalNotesHighPercentage">Notas con prioridad alta (%)</system:String>
+    <system:String x:Key="AdminViewTotalNotesMediumPercentage">Notas con prioridad media (%)</system:String>
+    <system:String x:Key="AdminViewTotalNotesLowPercentage">Notas con prioridad baja (%)</system:String>
+    <system:String x:Key="AdminViewTab1TextBlock">Email o ID</system:String>
+    <system:String x:Key="AdminViewTab2TextBlock1">ID de usuario o ID de nota</system:String>
+    <system:String x:Key="AdminViewTab2TextBlock2">Título o contenido</system:String>
+    <system:String x:Key="AdminViewTab2ComboBoxItem1">ID de usuario</system:String>
+    <system:String x:Key="AdminViewTab2BomboBoxItem2">ID de nota</system:String>
+    <system:String x:Key="AdminViewTab1Button">B U S C A R</system:String>
+    <system:String x:Key="AdminViewTab2Button1">B U S C A R</system:String>
+    <system:String x:Key="AdminViewTab2Button2">B U S C A R</system:String>
+    <system:String x:Key="AdminViewTab2ButtonCombined">B Ú S Q U E D A  C O M B I N A D A</system:String>
+
+
+    <!--  AdminView -> CS  -->
+    <system:String x:Key="AdminViewCSFindUserDataClickTextBoxEmpty">Por favor, ingrese un correo o ID</system:String>
+    <system:String x:Key="AdminViewCSDontResultsFound">No se encontraron resultados</system:String>
+    <system:String x:Key="AdminViewCSTbFromGoogleText">Usuario del login de Google:</system:String>
+    <system:String x:Key="AdminViewCSTbNoteCount">Cantidad de notas:</system:String>
+    <system:String x:Key="AdminViewCSTbIsAdmin">Administrador:</system:String>
+    <system:String x:Key="AdminViewCSErrorMessageNotUserID">
+        Por favor, ingrese un ID de usuario.
+        Si está ingresado asegúrese de que ha ingresado sólo números.
+    </system:String>
+    <system:String x:Key="AdminViewCSErrorMessageNotNoteID">
+        Por favor, ingrese un ID de nota. Si está ingresado asegúrese de que ha ingresado sólo números.
+    </system:String>
+    <system:String x:Key="AdminViewCSErrorMessageNotAllFields">
+        Por favor, ingrese todos los campos para poder hacer una búsqueda combinada
+    </system:String>
+    <system:String x:Key="AdminViewCSErrorMessageNotAllFields2">
+        Por favor, ingrese todos los campos para poder hacer una búsqueda combinada
+    </system:String>
+    <system:String x:Key="AdminViewCSErrorMessageOnlyNumbersOnFirstField">
+        Ingrese sólo numeros en el primer campo
+    </system:String>
+    <system:String x:Key="AdminViewCSErrorMessageOnlyNumbersOnFirstField2">
+        Ingrese sólo numeros en el primer campo
+    </system:String>
+    <system:String x:Key="AdminViewCSErrorDontContent">
+        Por favor, ingrese un título o contenido
+    </system:String>
+    <system:String x:Key="AdminViewCSReport">
+        Nota reportada con éxito
+    </system:String>
+    <system:String x:Key="AdminViewCSReportCaption">
+        Éxito
+    </system:String>
+    <system:String x:Key="AdminViewCSNotNotesFound">
+        No se encontraron notas
+    </system:String>
+    <system:String x:Key="AdminViewCSLoadNotesIdNote">
+        Id Nota:
+    </system:String>
+    <system:String x:Key="AdminViewCSLoadNotesUserID">
+        Id Usuario:
+    </system:String>
+    <system:String x:Key="AdminViewCSLoadNotesPriority">
+        Prioridad:
+    </system:String>
+    <system:String x:Key="AdminViewCSLoadNotesCompleted">
+        Completada:
+    </system:String>
+    <system:String x:Key="AdminViewCSLoadNotesIdNoteDontFoundNotes">
+        No se encontraron notas
+    </system:String>
+    <system:String x:Key="AdminViewCSLoadNotesIdNoteNoteID">
+        ID Nota:
+    </system:String>
+    <system:String x:Key="AdminViewCSLoadNotesIdNoteUserID">
+        ID Usuario:
+    </system:String>
+    <system:String x:Key="AdminViewCSLoadNotesIdNotePriority">
+        Prioridad:
+    </system:String>
+    <system:String x:Key="AdminViewCSLoadNotesIdNoteCompleted">
+        Completada:
+    </system:String>
+    <system:String x:Key="AdminViewCSLoadNotesTitlesAndBodiesDontFoundNotes">
+        No se encontraron notas
+    </system:String>
+    <system:String x:Key="AdminViewCSLoadNotesTitlesAndBodiesIDNote">
+        ID Nota:
+    </system:String>
+    <system:String x:Key="AdminViewCSLoadNotesTitlesAndBodiesIDUser">
+        ID Usuario:
+    </system:String>
+    <system:String x:Key="AdminViewCSLoadNotesTitlesAndBodiesPriority">
+        Prioridad:
+    </system:String>
+    <system:String x:Key="AdminViewCSLoadNotesTitlesAndBodiesCompleted">
+        Completada:
+    </system:String>
+    <system:String x:Key="AdminViewCSLoadNotesTitlesAndBodiesIDNoteBodies">
+        ID Nota:
+    </system:String>
+    <system:String x:Key="AdminViewCSLoadNotesTitlesAndBodiesIDUserBodies">
+        ID Usuario:
+    </system:String>
+    <system:String x:Key="AdminViewCSLoadNotesTitlesAndBodiesPriorityBodies">
+        Prioridad:
+    </system:String>
+    <system:String x:Key="AdminViewCSLoadNotesTitlesAndBodiesCompletedBodies">
+        Completada:
+    </system:String>
+    <!--  ExportFormatWindow  -->
+    <system:String x:Key="ExportFormatWindowTitle">Elige un formato</system:String>
+    <system:String x:Key="ExportFormatWindowTextBlock">¿En qué formato deseas exportar esta nota?</system:String>
+
+    <!--  ExportView  -->
+    <system:String x:Key="ExportFormatViewTextBlock1">Formato de destino</system:String>
+    <system:String x:Key="ExportFormatViewComboBoxItem1">CSV</system:String>
+    <system:String x:Key="ExportFormatViewComboBoxItem2">TXT</system:String>
+    <system:String x:Key="ExportFormatViewButtonExport">E X P O R T A R</system:String>
+    <system:String x:Key="ExportViewCaption">Exportar tus notas</system:String>
+
+    <!--  ExportView -> ViewModel  -->
+    <system:String x:Key="ExportFormatViewModelNoNotesMBText">No hay notas para exportar.</system:String>
+    <system:String x:Key="ExportFormatViewModelHeader1">Título</system:String>
+    <system:String x:Key="ExportFormatViewModelHeader2">Contenido</system:String>
+    <system:String x:Key="ExportFormatViewModelHeader3">Prioridad</system:String>
+    <system:String x:Key="ExportFormatViewModelHeader4">Completado</system:String>
+    <system:String x:Key="ExportFormatViewModelTBSavedFileText">Archivo guardado correctamente</system:String>
+    <system:String x:Key="ExportFormatViewModelTBSavedFileCaption">Archivo guardado</system:String>
+    <system:String x:Key="ExportFormatViewModelTBSavedFileErrorText">
+        Ha ocurrido un error. Si está sobreescribiendo un archivo
+        ya existente, ciérrelo e inténtelo de nuevo.
+    </system:String>
+    <system:String x:Key="ExportFormatViewModelTXTContent">========== NOTA ==========</system:String>
+    <system:String x:Key="ExportFormatViewModelTXTTitleNoteHeader">Título:</system:String>
+    <system:String x:Key="ExportFormatViewModelTXTBodyNoteHeader">Contenido:</system:String>
+    <system:String x:Key="ExportFormatViewModelTXTPriorityNoteHeader">Prioridad:</system:String>
+    <system:String x:Key="ExportFormatViewModelTXTCompletedNoteHeader">Completada:</system:String>
+
+    <!--  GraphicView  -->
+    <system:String x:Key="GraphicViewPieChartSeries1Title">Completada</system:String>
+    <system:String x:Key="GraphicViewPieChartSeries2Title">No completada</system:String>
+    <system:String x:Key="GraphicViewPieChart2Series1Title">Alta</system:String>
+    <system:String x:Key="GraphicViewPieChart2Series2Title">Media</system:String>
+    <system:String x:Key="GraphicViewPieChart2Series3Title">Baja</system:String>
+    <system:String x:Key="GraphicViewCartesianChartAxisXTitle">Baja</system:String>
+    <system:String x:Key="GraphicViewCartesianChartAxisXTitle2">Media</system:String>
+    <system:String x:Key="GraphicViewCartesianChartAxisXTitle3">Alta</system:String>
+
+    <system:String x:Key="GraphicViewPieChartTextBlockDontNotes">No hay notas, añade tu primera nota para tener gráficos.</system:String>
+    <system:String x:Key="GraphicViewCaption">Gráficos</system:String>
+
+    <!--  GraphicView -> CS  -->
+    <system:String x:Key="GraphicViewCSPieChartSeriesTitleNotesCompleted">Notas completadas ({0}%)</system:String>
+    <system:String x:Key="GraphicViewCSPieChartSeriesTitleNotesNoCompleted">Notas no completadas ({0}%)</system:String>
+    <system:String x:Key="GraphicViewCSPieChartSeriesTitleNotesHigh">Prioridad alta ({0}%)</system:String>
+    <system:String x:Key="GraphicViewCSPieChartSeriesTitleNotesMedium">Prioridad media ({0}%)</system:String>
+    <system:String x:Key="GraphicViewCSPieChartSeriesTitleNotesLow">Prioridad baja ({0}%)</system:String>
+
+    <!--  HelpView  -->
+    <system:String x:Key="HelpViewTextBlock">¿En qué te podemos ayudar?</system:String>
+    <system:String x:Key="HelpViewSendButton">E N V I A R</system:String>
+    <system:String x:Key="HelpViewCaption">Ayuda</system:String>
+
+    <!--  HelpView -> CS  -->
+    <system:String x:Key="HelpViewReportSent">¡Gracias por tu mensaje! Responderemos lo antes posible. Recibirás nuestra respuesta en tu correo</system:String>
+    <system:String x:Key="HelpViewReportSentCaption">Mensaje enviado</system:String>
+
+    <!--  LoginView  -->
+    <system:String x:Key="LoginViewReadyTaskTextBlock">READY TASKS</system:String>
+    <system:String x:Key="LoginViewEmailTextBlock">Email</system:String>
+    <system:String x:Key="LoginViewPasswordTextBlock">Contraseña</system:String>
+    <system:String x:Key="LoginViewLoginButtonContent">INICIAR SESIÓN</system:String>
+    <system:String x:Key="LoginViewRegisterButtonContent">REGISTRATE</system:String>
+
+    <!--  LoginView -> ViewModel  -->
+    <system:String x:Key="LoginViewViewModelErrorLoginEmailOrPasswordWrong">Correo o contraseña inválidos</system:String>
+    <system:String x:Key="LoginViewViewModelErrorEmailPasswordExists">Credenciales registradas, por favor inicia sesión</system:String>
+    <system:String x:Key="LoginViewViewModelErrorMailExists">El correo ya existe, por favor inicia sesión</system:String>
+
+    <!--  MainView  -->
+    <system:String x:Key="MainViewReadyTasksTextBlock">READY TASKS</system:String>
+    <system:String x:Key="MainViewDashboard">Tus Notas</system:String>
+    <system:String x:Key="MainViewDoGraphic">Gráficos</system:String>
+    <system:String x:Key="MainViewExportAllNotes">Exportar tus notas</system:String>
+    <system:String x:Key="MainViewSettings">Ajustes</system:String>
+    <system:String x:Key="MainViewHelp">Ayuda</system:String>
+    <system:String x:Key="MainViewCaption">Tus Notas</system:String>
+
+    <!--  MainView -> ViewModel  -->
+    <system:String x:Key="MainViewOpenedSecondaryViewSettings">Ajustes</system:String>
+
+    <!--  HomeView  -->
+    <system:String x:Key="HomeViewCaption">Tus Notas</system:String>
+
+    <!--  HomeView -> CS  -->
+    <system:String x:Key="HomeViewDeleteConfirmationMBText">¿Estás seguro de que deseas eliminar esta nota?</system:String>
+    <system:String x:Key="HomeViewDeleteConfirmationMBCaption">Confirmación</system:String>
+    <system:String x:Key="HomeViewConvertErrorMBText">Ha ocurrido un error. Si está sobreescribiendo un archivo ya existente, ciérrelo e inténtelo de nuevo.</system:String>
+
+    <!--  HomeView -> ViewModel  -->
+    <system:String x:Key="HomeViewViewModelExportNoteTitleHeader">Título</system:String>
+    <system:String x:Key="HomeViewViewModelExportNoteBodyHeader">Contenido</system:String>
+    <system:String x:Key="HomeViewViewModelExportNotePriorityHeader">Prioridad</system:String>
+    <system:String x:Key="HomeViewViewModelExportNoteCompletedHeader">Completada</system:String>
+    <system:String x:Key="HomeViewViewModelExportNoteCompletedMBText">Archivo guardado correctamente</system:String>
+    <system:String x:Key="HomeViewViewModelExportNoteCompletedMBCaption">Archivo guardado</system:String>
+    <system:String x:Key="HomeViewViewModelNotificationMBWarningText">
+        ATENCIÓN: Si al pulsar este botón se cierra el programa
+        y/o el programa no vuelve a abrir,
+        por favor cierre sesión (en su ordenador) o reinicie el dispositivo.
+    </system:String>
+    <system:String x:Key="HomeViewViewModelNotificationMBWarningCaption">Alerta</system:String>
+    <system:String x:Key="HomeViewViewModelNotificationFormText">Introducir fecha y hora</system:String>
+    <system:String x:Key="HomeViewViewModelNotificationLabelText">
+        Introduce la fecha y hora en formato DD/MM/YYYY HH:MM.&#x0a;
+        Ejemplo: 10/05/2024 10:42
+    </system:String>
+    <system:String x:Key="HomeViewViewModelNotificationMBErrorFormatText">Formato de fecha y hora incorrecto. Por favor, introduce la fecha y hora en el formato DD/MM/YYYY HH:MM.</system:String>
+    <system:String x:Key="HomeViewViewModelNotificationMBErrorOldTimeText">La fecha y hora no puede ser anterior o igual a la fecha y hora actual.</system:String>
+    <system:String x:Key="HomeViewViewModelNotificationToastArgumentValue">Notificación de Nota ReadyTasks</system:String>
+    <system:String x:Key="HomeViewViewModelNotificationToastGroup">Mensaje</system:String>
+
+    <!--  SettingsView  -->
+    <system:String x:Key="SettingsViewTextBlock">Idioma</system:String>
+    <system:String x:Key="SettingsViewComboBoxItem1">Español</system:String>
+    <system:String x:Key="SettingsViewComboBoxItem2">Inglés</system:String>
+    <system:String x:Key="SettingsViewComboBoxItem3">Valenciano</system:String>
+    <system:String x:Key="SettingsViewTextBlockDeleteAllNotes">Eliminar todas tus notas</system:String>
+    <system:String x:Key="SettingsViewTextBlockDeleteAllNotesClick">Pulsa aquí para eliminar todas tus notas</system:String>
+    <system:String x:Key="SettingsViewTextBlockDeleteAccount">Eliminar cuenta</system:String>
+    <system:String x:Key="SettingsViewTextBlockDeleteAccountClick">Pulsa aquí para eliminar tu cuenta</system:String>
+
+    <!--  SettingsView -> ViewModel  -->
+    <system:String x:Key="SettingsViewModelDeleteAllUserTBErrorAdminText">
+        No puedes eliminar la cuenta debido a que eres administrador.
+        Contacta con nosotros para que la eliminemos por ti.
+    </system:String>
+    <system:String x:Key="SettingsViewModelDeleteAllUserTBDeleteAccountWarningText">
+        ¿Estás seguro? Este proceso es PERMANENTE y ELIMINARÁ TODAS TUS NOTAS SIN PODER RECUPERARLAS
+    </system:String>
+    <system:String x:Key="SettingsViewModelDeleteAllUserTBDeleteAccountWarningCaption">
+        Alerta
+    </system:String>
+    <system:String x:Key="SettingsViewModelDeleteAllUserTBDeleteAccountOKText">
+        Cuenta eliminada correctamente
+    </system:String>
+    <system:String x:Key="SettingsViewModelDeleteAllUserTBDeleteAccountOKCaption">
+        Éxito
+    </system:String>
+    <system:String x:Key="SettingsViewModelDeleteAllUserTBDeleteAccountError">
+        Ha ocurrido un error. Inténtelo de nuevo
+    </system:String>
+    <system:String x:Key="SettingsViewModelDeleteAllNotesTBTextOK">
+        Notas eliminadas correctamente
+    </system:String>
+    <system:String x:Key="SettingsViewModelDeleteAllNotesTBCaptionOK">
+        Éxito
+    </system:String>
+
+
+    <!--  Repositories  -->
+    <!--  NoteRepository  -->
+    <system:String x:Key="NoteRepositoryAddNoteToUserMBErrorText">Ya existe una nota con el mismo contenido</system:String>
+    <system:String x:Key="NoteRepositoryAddNoteToUserMBTextOK">Nota agregada correctamente</system:String>
+    <system:String x:Key="NoteRepositoryAddNoteToUserMBTextCaption">Listo</system:String>
+    <system:String x:Key="NoteRepositoryEditNoteToUserMBTextOK">Nota editada correctamente</system:String>
+    <system:String x:Key="NoteRepositoryEditNoteToUserMBTextERROR">Ha ocurrido un error, inténtalo de nuevo</system:String>
+    <system:String x:Key="NoteRepositoryDeleteNoteToUserMBTextOK">Nota eliminada correctamente</system:String>
+    <system:String x:Key="NoteRepositoryMarkCompletedNoteToUserMBTextOK">Nota marcada como completada</system:String>
+    <system:String x:Key="NoteRepositoryMarkUncompletedNoteToUserMBTextOK">Nota marcada como no completada</system:String>
+    <system:String x:Key="NoteRepositoryDeleteAllNotesOnlyDontNotes">No tienes notas</system:String>
+
+</ResourceDictionary>
